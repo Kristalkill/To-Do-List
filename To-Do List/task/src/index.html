@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="main">
     <h1 id="title">To-Do List</h1>
-    <label>
+    <label class="add-task" for="input-task">
         <input id="input-task">
         <button id="add-task-button">ADD TASK</button>
     </label>
     <ul id="task-list">
         <li>
             <label>
-                <input type="checkbox" class="checkbox">
-                <span class="task"></span>
-                <button class="delete-btn"></button>
-            </label>
-        </li>
-        <li>
-        <label>
-                <input type="checkbox" class="checkbox">
+                <input class="checkbox" type="checkbox">
                 <span class="task"></span>
                 <button class="delete-btn"></button>
             </label>
         </li>
         <li>
             <label>
-                <input type="checkbox" class="checkbox">
+                <input class="checkbox" type="checkbox">
+                <span class="task"></span>
+                <button class="delete-btn"></button>
+            </label>
+        </li>
+        <li>
+            <label>
+                <input class="checkbox" type="checkbox">
                 <span class="task"></span>
                 <button class="delete-btn"></button>
             </label>
         </li>
     </ul>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

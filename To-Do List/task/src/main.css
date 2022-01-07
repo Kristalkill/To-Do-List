@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, rgba(246, 170, 54, 0.74), rgba(243, 36, 248, 0.46));+
+}
+.main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.main {
+    width: 700px;
+    height: 60vh;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+#add-task-button {
+    linear-gradient(rgb(255, 212, 3), rgb(248, 157, 23));
+    border-radius: 7px;
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0),
+    inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0);
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    user-select: none;
+    flex: 1;
+    text-transform: uppercase;
+    margin-left: 10px;
+    background-color: #b738d2;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    border: 0;
+    color: #fff;
+}
+
+#add-task-button:hover {
+    box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0),
+    inset 0 1px 2px rgba(0, 0, 0, 0), inset 0 0 0 60px rgba(255, 255, 0, 0.5);
+}
+
+.add-task {
+    width: 90%;
+    margin-top: 2rem;
+    display: flex;
+}
+.add-task input {
+    flex: 2 1 auto;
+    margin-right: 1rem;
+}
+
+#task-list {
+    width:90%;
+    margin-top: 2rem;
+    display: inline-block;
+    list-style: none;
+}
+
+#task-list li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+#input-task {
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: .5px solid;
+}
+input[type="checkbox"] {
+    margin-right: 1rem;
+    transform: scale(1.8);
+
+}
+
+.delete-btn {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 0;
+    padding: .2rem;
+    float: right;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    border: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNjQiIGhlaWdodD0iNjQiCnZpZXdCb3g9IjAgMCA1MTIgNTEyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxwYXRoIGZpbGw9IiNFMDRGNUYiIGQ9Ik01MDQuMSwyNTZDNTA0LjEsMTE5LDM5Myw3LjksMjU2LDcuOUMxMTksNy45LDcuOSwxMTksNy45LDI1NkM3LjksMzkzLDExOSw1MDQuMSwyNTYsNTA0LjFDMzkzLDUwNC4xLDUwNC4xLDM5Myw1MDQuMSwyNTZ6Ij48L3BhdGg+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTI4NSwyNTZsNzIuNS04NC4yYzcuOS05LjIsNi45LTIzLTIuMy0zMWMtOS4yLTcuOS0yMy02LjktMzAuOSwyLjNMMjU2LDIyMi40bC02OC4yLTc5LjJjLTcuOS05LjItMjEuOC0xMC4yLTMxLTIuM2MtOS4yLDcuOS0xMC4yLDIxLjgtMi4zLDMxTDIyNywyNTZsLTcyLjUsODQuMmMtNy45LDkuMi02LjksMjMsMi4zLDMxYzQuMSwzLjYsOS4yLDUuMywxNC4zLDUuM2M2LjIsMCwxMi4zLTIuNiwxNi42LTcuNmw2OC4yLTc5LjJsNjguMiw3OS4yYzQuMyw1LDEwLjUsNy42LDE2LjYsNy42YzUuMSwwLDEwLjItMS43LDE0LjMtNS4zYzkuMi03LjksMTAuMi0yMS44LDIuMy0zMUwyODUsMjU2eiI+PC9wYXRoPjwvc3ZnPg==') 50% 50% no-repeat;
+    background-size: 100%;
+
+}
