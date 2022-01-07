@@ -1,5 +1,5 @@
 
-//get all needed to add new element to list
+//get all needed to add new tasks to list
 
 const add_task = document.getElementById('add-task-button');
 const task_list = document.getElementById('task-list');
@@ -8,7 +8,7 @@ const task_input = document.getElementById('input-task');
 //checking if task_input is empty, if not enable button
 task_input.addEventListener('input', () => add_task.disabled = task_input.value.length < 0);
 
-//adding new element to list
+//adding new task to list
 add_task.addEventListener('click', () => {
     //create span
     const span = document.createElement('span')
