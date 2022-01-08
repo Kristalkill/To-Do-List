@@ -5,6 +5,9 @@ const task_input = document.getElementById('input-task');
 
 let taskList = JSON.parse(localStorage.getItem("tasks")) || [];
 
+//checking if task_input is empty, if not enable button
+task_input.addEventListener('input', () => add_task.disabled = task_input.value.length < 0);
+
 function addTask(text, enabled = false) {
     //create span
     const span = document.createElement('span')
@@ -44,17 +47,17 @@ function addTask(text, enabled = false) {
 }
 
 for (const task of taskList) {
-  addTask(task.text, task.enabled)
+    addTask(task.text, task.enabled)
 }
-//checking if task_input is empty, if not enable button
-task_input.addEventListener('input', () => add_task.disabled = task_input.value.length < 0);
-
 //adding new task to list
 add_task.addEventListener('click', () => {
+    if (taskList.some(x => x.text === task_input.value)) return window.alert("Alredy there");
     addTask(task_input.value)
     taskList.push({
         enabled: false,
         text: task_input.value
     })
     localStorage.setItem("tasks", JSON.stringify(taskList))
+    task_input.value = '';
+    add_task.disabled = true;
 })
