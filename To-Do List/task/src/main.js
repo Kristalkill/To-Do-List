@@ -59,5 +59,4 @@ add_task.addEventListener('click', () => {
     })
     localStorage.setItem("tasks", JSON.stringify(taskList))
     task_input.value = '';
-    add_task.disabled = true;
 })
